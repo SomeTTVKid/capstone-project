@@ -51,8 +51,24 @@ function Tooltip(){
                         <h5>No stats available</h5>
                     )}
 
+                    {/* .replace(/\|A.*\|a/, "").trim() */}
                     {/* Check for enchantments */}
-                    {item.enchantments? <h5 className="enchantment">{item.enchantments[0].display_string.replace(/\|A.*\|a/, "").trim()}</h5> : null}
+                    {/* Loop through all enchants to display them */}
+                    {/* {item.enchantments ? <h5 className="enchantment">{item.enchantments[0].display_string}</h5> : null} */}
+                    {item.enchantments ? (
+                        item.enchantments.map((enchant, index) => (
+                            enchant.spell ? (
+                                <h5 key={index} className="enchantment">
+                                    {/* {enchant.display_string} */}
+                                    {enchant.spell.description}
+                                </h5>
+                            ) : (
+                                <h5 key={index} className="enchantment">
+                                    {(enchant.display_string ?? "").replace(/\|A.*\|a/, "").trim()}
+                                </h5>
+                            )
+                        ))
+                    ) : null}
 
                     {/* Do check here for sockets */}
                     {item.sockets?.length ? (

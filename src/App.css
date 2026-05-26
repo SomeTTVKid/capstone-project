@@ -203,7 +203,7 @@ body{
 
 .search-btn{
     position: absolute;
-    left: 80%;
+    left: 85%;
     font-size: 2rem;
     background-color: transparent;
     width: 60px;
@@ -285,7 +285,7 @@ body{
 }
 
 .tooltip-ilvl{
-    color: orange;
+    color: rgb(255, 213, 0);
 }
 
 .slot-material{
@@ -299,12 +299,14 @@ body{
 .enchantment{
     text-align: start;
     padding-top: 5px;
+    padding-bottom: 3px;
     color: rgba(0, 255, 0, 1);
 }
 
 .socket-div{
     padding-top: 5px;
     padding-bottom: 5px;
+    text-align: start;
 }
 
 .socket-bonus{
@@ -399,6 +401,51 @@ body{
     width: 100%;
     height: 50%;
     background-color: black;
+    color: white;
+}
+
+.top-stats, .bottom-stats{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 50%;
+    align-items: center;
+}
+
+.bottom-stats{
+    top: 50%;
+}
+
+.stat-image{
+    height: 56px;
+    width: 56px;
+}
+
+.crit-tooltip{
+    visibility: hidden;
+    position: absolute;
+}
+
+.stat-image:hover ~ .stat-name{
+    text-decoration: underline;
+}
+
+.stat-image:hover ~ .crit-tooltip{
+    opacity: 1;
+    visibility: visible;
+}
+
+.stat-name{
+    position: absolute;
+    top: 50%;
+    margin-left: 4%;
+}
+
+.stat-value{
+    position: absolute;
+    top: 39%;
+    margin-left: 4%;
 }
 
 .COMMON{
@@ -540,11 +587,13 @@ body{
 .MAIN_HAND .item-name{
     left: 0;
     top: -20px;
+    white-space: nowrap;
 }
 
 .OFF_HAND .item-name{
     left: 0;
     top: -20px;
+    white-space: nowrap;
 }
 
 .MAIN_HAND > .tool-tip,

@@ -16,7 +16,7 @@ function SearchResults(){
             {<img className='bg-image' src={BG} />}
             <RenderCharacter />
             {isDataPopulated && <Tooltip />}
-            <StatRender />
+            {isDataPopulated && <StatRender />}
         </div>
     )
 }
