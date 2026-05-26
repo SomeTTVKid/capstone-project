@@ -15,7 +15,7 @@ function AboutPage(){
                 <div className='first-experience'>
                     <h2>
                         I started my programming journey around 3 years ago now. In the beginning
-                        I didnt understand anything as I was just following C# tutorials for unity,
+                        I didn't understand anything as I was just following C# tutorials for Unity,
                         and that really bothered me. So I quit that and started Angela Yu's Web Dev Bootcamp course
                         on Udemy. 
                     </h2>

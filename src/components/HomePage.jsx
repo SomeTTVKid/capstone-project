@@ -33,7 +33,7 @@ function HomePage(){
                         This web app uses Blizzard's public API to retrieve WoW character data
                         and then displays it in a layout similar to in-game and the official 
                         WoW Armory website. I did not try to reinvent the layout because it's, 
-                        in my own opinion, simply the perfect layout. for more information about 
+                        in my own opinion, simply the perfect layout. For more information about 
                         the API calls I have used, I will link the documentation 
                         <a 
                             href='https://community.developer.battle.net/documentation/world-of-warcraft/game-data-apis'
@@ -48,9 +48,9 @@ function HomePage(){
                     <h2>How can we use this website?</h2>
                     <br />
                     <p>
-                        The use is really simple. First thing is you must know a WoW character's name
-                        and the realm/server they are on! Ill provide some example ones if you do not have a 
-                        WoW character or do not know anyones WoW character's name and realm. 
+                        The use is really simple. The first thing you must know is a WoW character's name
+                        and the realm/server they are on! I'll provide some example ones if you do not have a 
+                        WoW character or do not know a WoW character's name and realm. 
                         <br />
                         <br />
                         To search the character
@@ -68,7 +68,7 @@ function HomePage(){
                     </p>                    
                 </div>
                 <div className='examples'>
-                    <h3>Character Exmaples:</h3>
+                    <h3>Character Examples:</h3>
                     <br />
                     <p>
                         (Clucktis - Thrall)
@@ -117,9 +117,9 @@ function HomePage(){
                     <p>
                         As it stands, this is the final version of the website. While I did want to add in 
                         a 3D model viewer, the documentation and setup proved to be too much of a hassle 
-                        for me in the deadline that I set for myself. With more time and motivation I 
+                        for me in the deadline that I set for myself. With more time and motivation, I 
                         believe I could get it working. I think web dev was much more difficult to put into
-                        practice than I thought and I do not plan on making any more web apps for the forseable
+                        practice than I thought and I do not plan on making any more web apps for the foreseable
                         future.
                     </p>                    
                 </div>
