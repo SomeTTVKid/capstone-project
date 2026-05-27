@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/*"
-  to = "/"
+  to = "https://wow-armory.netlify.app/"
   status = 301
   force = true
