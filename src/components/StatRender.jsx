@@ -77,6 +77,7 @@ function StatRender(){
                 break
             case 'Maelstrom':
                 iconSrc = 'https://warcraft.wiki.gg/images/Attribute_maelstrom.svg?7947e6'
+                textColor = 'rgb(0, 204, 255)'
                 break
             default:
                 iconSrc = null
