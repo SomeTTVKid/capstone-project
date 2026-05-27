@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/:path+"
+  from = "/*/*"
   to = "/"
   status = 302
   force = true
