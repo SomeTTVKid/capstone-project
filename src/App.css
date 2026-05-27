@@ -243,6 +243,7 @@ body{
     word-break: keep-all;
     overflow-wrap: break-word;
     width: 25ch;
+    pointer-events: none;
 }
 
 .item-ilvl{
@@ -252,6 +253,7 @@ body{
     left: 75px;
     color: rgb(205, 231, 252);
     font-size: 14px;
+    pointer-events: none;
 }
 
 .tool-tip{
