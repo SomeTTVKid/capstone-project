@@ -1,15 +1,11 @@
 {
-  "redirects": [
+  "routes": [
     {
-      "source": "/character/:path*",
-      "destination": "/",
-      "permanent": false
-    }
-  ],
-  "rewrites": [
+      "handle": "filesystem"
+    },
     {
-      "source": "/((?!character).* )",
-      "destination": "/index.html"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
