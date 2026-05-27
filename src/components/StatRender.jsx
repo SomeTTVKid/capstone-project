@@ -117,24 +117,24 @@ function StatRender(){
                     {
                     (stats.agility.effective >= stats.intellect.effective && 
                     stats.agility.effective >= stats.strength.effective) ? 
-                        <div className='stat'>
+                        <>
                             <img className='stat-image' src='https://warcraft.wiki.gg/images/Attribute_agility.svg?12080d'/>
                             <h3 className='stat-name'>Agility:</h3>
                             <h3 style={{ color: '#ffd900' }}className='stat-value'>{stats.agility.effective.toLocaleString('en-US')}</h3>
-                        </div> 
+                        </> 
                     :
                     (stats.intellect.effective >= stats.strength.effective) ? 
-                        <div className='stat'>
+                        <>
                             <img className='stat-image' src='https://warcraft.wiki.gg/images/Attribute_intellect.svg?634428'/>
                             <h3 className='stat-name'>Intellect:</h3>
                             <h3 style={{ color: '#dd00ff' }}className='stat-value'>{stats.intellect.effective.toLocaleString('en-US')}</h3>
-                        </div> 
+                        </> 
                     :
-                    <div className='stat'>
+                    <>
                         <img className='stat-image' src='https://warcraft.wiki.gg/images/Attribute_strength.svg?ae5a26'/>
                         <h3 className='stat-name'>Strength:</h3>
                         <h3 style={{ color: 'rgb(255, 1, 1)' }} className='stat-value'>{stats.strength.effective.toLocaleString('en-US')}</h3>
-                    </div> 
+                    </>
                     }
                 </div>
                 {/* Stamina */}
@@ -164,18 +164,36 @@ function StatRender(){
                     <img className='stat-image' src='https://warcraft.wiki.gg/images/Attribute_haste.svg?a71547'/> 
                     <h3 className='stat-name'>Haste:</h3>
                     <h3 style={{ color: 'rgb(62, 255, 178)' }} className='stat-value'>{Math.round(stats.melee_haste.value)}%</h3>
+                    <div className='haste-tooltip'>
+                        <h3>Haste</h3>
+                        <h4>{Math.round(stats.melee_haste.value)}%</h4>
+                        <h3>Total Rating:</h3>
+                        <h4>{stats.melee_haste.rating_normalized}</h4>
+                    </div>
                 </div>
                 {/* Mastery */}
                 <div className='mastery'>
                     <img className='stat-image' src='https://warcraft.wiki.gg/images/Attribute_mastery.svg?a0e006'/>
                     <h3 className='stat-name'>Mastery:</h3>
                     <h3 style={{ color: '#9256ff' }} className='stat-value'>{Math.round(stats.mastery.value)}%</h3>
+                    <div className='mastery-tooltip'>
+                        <h3>Mastery</h3>
+                        <h4>{Math.round(stats.mastery.value)}%</h4>
+                        <h3>Total Rating:</h3>
+                        <h4>{stats.mastery.rating_normalized}</h4>
+                    </div>
                 </div>
                 {/* Vers */}      
                 <div className='versatility'>
                     <img className='stat-image' src='https://warcraft.wiki.gg/images/Attribute_versatility.svg?72321f'/>
                     <h3 className='stat-name'>Versatility:</h3>
                     <h3 style={{ color: 'grey' }} className='stat-value'>{Math.round(stats.versatility_damage_done_bonus)}%</h3>
+                    <div className='versatility-tooltip'>
+                        <h3>Versatility</h3>
+                        <h4>{Math.round(stats.versatility_damage_done_bonus)}%</h4>
+                        <h3>Total Rating:</h3>
+                        <h4>{stats.versatility}</h4>
+                    </div>
                 </div> 
             </div>
         </div>
