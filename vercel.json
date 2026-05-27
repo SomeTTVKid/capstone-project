@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/character/:path*",
+      "destination": "/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!character).* )",
+      "destination": "/index.html"
+    }
+  ]
+}
